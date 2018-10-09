@@ -1,8 +1,12 @@
-# Personal React Components
+# Reusable React Components
 
-A library of React components I've created for personal projects.
+My library of reusable React components that I have created for personal projects.
 
 ## Install
+```
+yarn add spunky-ui-react --dev
+```
+
 ```
 npm install spunky-ui-react
 ```
