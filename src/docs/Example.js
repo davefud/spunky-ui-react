@@ -8,7 +8,7 @@ class Example extends React.Component {
     this.state = { showCode: false };
   }
 
-    // Static Class property with arrow function - experimental feature transpiled by Babel
+  // Static Class property with arrow function - experimental feature transpiled by Babel
   toggleCode = event => {
     event.preventDefault();
     this.setState(prevState => {

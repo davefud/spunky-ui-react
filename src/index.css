@@ -54,9 +54,9 @@ table {
   float: left;
   width: 250px;
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 0 50px;
 }
 
 .componentpage {
-  margin-left: 275px;
+  margin-left: 300px;
 }

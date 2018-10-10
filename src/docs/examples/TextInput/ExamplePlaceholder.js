@@ -1,5 +1,5 @@
 import React from 'react';
-import TextInput from 'spunky-ui-react/TextInput';
+import TextInput from 'spunky/TextInput';
 
 /** TextInput with placeholder */
 export default class ExamplePlaceholder extends React.Component {

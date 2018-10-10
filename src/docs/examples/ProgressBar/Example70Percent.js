@@ -1,5 +1,5 @@
 import React from 'react';
-import ProgressBar from 'spunky-ui-react/ProgressBar';
+import ProgressBar from 'spunky/ProgressBar';
 
 /** 70% progress */
 export default function Example70Percent() {

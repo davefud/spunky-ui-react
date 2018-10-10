@@ -1,6 +1,10 @@
 import React from 'react';
-import EyeIcon from 'spunky-ui-react/EyeIcon';
+import EyeIcon from 'spunky/EyeIcon';
 
 export default function Example() {
-    return <EyeIcon />;
+    return (
+        <div>
+            <div><EyeIcon /></div>
+        </div>
+    );
 }
