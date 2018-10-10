@@ -5,7 +5,7 @@ import PasswordInput from 'spunky-ui-react/PasswordInput';
 class ExampleAllFeatures extends React.Component {
     constructor(props) {
         super(props);
-        
+
         this.state = {
             password: ''
         };
@@ -15,6 +15,13 @@ class ExampleAllFeatures extends React.Component {
         const length = this.state.password.length;
         return length > 10 ? 100 : length * 10;
       }
+
+      // ES7 Class Properties
+      setPassword = ev => {
+          this.setState({
+             password: ev.target.value 
+          });
+      }
     
       render() {
         return (
@@ -22,7 +29,7 @@ class ExampleAllFeatures extends React.Component {
             <PasswordInput
               htmlId="password-input-example-all-features"
               name="password"
-              onChange={ event => this.setState({ password: event.target.value })}
+              onChange={this.setPassword}
               value={this.state.password}
               minLength={8}
               placeholder="Enter password"
