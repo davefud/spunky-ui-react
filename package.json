@@ -55,14 +55,17 @@
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.2"
   },
+  "homepage": "http://davefud.github.io/spunky-ui-react/",
   "scripts": {
     "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel start:docs gen:docs-watch",
     "start:docs": "node scripts/start.js",
     "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs -- --watch",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "build:docs": "node scripts/build.js",
+    "test": "node scripts/test.js",
+    "predeploy:docs": "npm run build:docs",
+    "deploy:docs": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
