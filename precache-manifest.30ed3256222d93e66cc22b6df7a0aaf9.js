@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/spunky-ui-react/static/js/runtime~main.c53e98c3.js"
   },
   {
-    "revision": "406088162ab6f9aad16f",
-    "url": "/spunky-ui-react/static/js/main.40608816.chunk.js"
+    "revision": "c9454fda42ac237b00db",
+    "url": "/spunky-ui-react/static/js/main.c9454fda.chunk.js"
   },
   {
     "revision": "ce2339726cd791d8fcfb",
     "url": "/spunky-ui-react/static/js/1.ce233972.chunk.js"
   },
   {
-    "revision": "406088162ab6f9aad16f",
+    "revision": "c9454fda42ac237b00db",
     "url": "/spunky-ui-react/static/css/main.8f6585a9.chunk.css"
   },
   {
-    "revision": "9d193b9174167ed5804ee1d8544d4b2a",
+    "revision": "ed1d2f58b89efa25413058f9b607e8fb",
     "url": "/spunky-ui-react/index.html"
   }
 ];
