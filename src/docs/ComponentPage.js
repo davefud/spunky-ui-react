@@ -11,18 +11,18 @@ const ComponentPage = ({component}) => {
       <h2>{name}</h2>
       <p>{description}</p>
 
-      <h3>Example{examples.length > 1 && "s"}</h3>
-      {
-        examples.length > 0 ?
-        examples.map( example => <Example key={example.name} example={example} componentName={name} /> ) :
-        "No examples exist."
-      }
-
-      <h3>Props</h3>
+      <h3>Props & Methods</h3>
       {
         props ?
         <Props props={props} /> :
         "This component accepts no props."
+      }
+
+      <h3>Example{examples.length > 1 && "s"}</h3>
+      {
+        examples.length > 0 ?
+        examples.map(example => <Example key={example.name} example={example} componentName={name} /> ) :
+        "No examples exist."
       }
     </div>
   )

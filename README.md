@@ -4,7 +4,7 @@ My library of reusable React components that I have created for personal project
 
 ## Install
 ```
-yarn add spunky-ui-react --dev
+yarn add spunky-ui-react
 ```
 
 ```
