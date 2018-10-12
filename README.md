@@ -15,5 +15,5 @@ npm install spunky-ui-react
 [Here's a list of current known issues](https://github.com/davefud/spunky-ui-react/issues).
 
 ## Docs
-[Component documentation] (https://davefud.github.io/spunky-ui-react/)
+[Component documentation] [https://davefud.github.io/spunky-ui-react/]
 
