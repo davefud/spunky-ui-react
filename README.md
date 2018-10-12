@@ -17,5 +17,5 @@ npm install spunky-ui-react
 ## Docs
 Comming soon...
 
-[//]: # "[Component documentation] https://davefud.github.io/spunky-ui-react/)"
+[Component documentation] https://davefud.github.io/spunky-ui-react/)
 
