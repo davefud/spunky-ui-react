@@ -11,7 +11,7 @@ const ComponentPage = ({component}) => {
       <h2>{name}</h2>
       <p>{description}</p>
 
-      <h3>Props & Methods</h3>
+      <h3 styles={{borderBottom: '2px #f28a25 solid'}}>Props & Methods</h3>
       {
         props ?
         <Props props={props} /> :
