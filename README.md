@@ -41,8 +41,8 @@ $ npm install
 $ npm run start
 ```
 
-While developing, you will probably rely mostly on `npm start`; however, there are additional scripts at your disposal:
-`
+> While developing, you will probably rely mostly on `npm start`
+
 |script|Description|
 |------------------|-----------|
 |`start`|Runs the script for metadata generation and places it in watch mode and starts the app.|
