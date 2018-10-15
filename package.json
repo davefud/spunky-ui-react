@@ -95,15 +95,15 @@
     "start:docs": "node scripts/start.js",
     "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs -- --watch",
-    "build:docs": "node scripts/build.js",
-    "test": "node scripts/test.js",
-    "build:css": "cpx \"./src/components/**/*.css\" ./lib",
     "prebuild:lib": "rimraf lib",
     "build:lib": "npm-run-all --parallel build:commonjs build:css build:copy-files",
+    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
+    "build:css": "cpx \"./src/components/**/*.css\" ./lib",
     "build:copy-files": "node scripts/copyBuildFiles.js",
     "predeploy:docs": "npm run build:docs",
     "deploy:docs": "gh-pages -d build",
-    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js"
+    "build:docs": "node scripts/build.js",
+    "test": "node scripts/test.js"
   },
   "eslintConfig": {
     "extends": "react-app"

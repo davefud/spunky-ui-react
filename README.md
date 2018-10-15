@@ -12,8 +12,25 @@
   <a href="https://travis-ci.org/davefud/spunky-ui-react"><img src="https://img.shields.io/travis/davefud/spunky-ui-react/master.svg?style=flat-square"></a>
 </p>
 
+## About
 
-## Getting Started
+My library of reusable React components that I have created for personal projects.
+
+## Docs
+
+[Component documentation](http://davefud.github.io/spunky-ui-react/)
+
+## Install
+
+```bash
+$ yarn add spunky-ui-react
+```
+
+```bash
+$ npm install spunky-ui-react
+```
+
+## Notes For Development
 
 Follow these steps to get the project up and running:
 
@@ -28,24 +45,10 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 
 |`npm run <script>`|Description|
 |------------------|-----------|
-|`start`|Starts webpack and test in watch mode using the development webpack configuration file.|
-|`gen:docs`|Runs the scripts/generateComponentData.js script to generate the config/componentData.js file.|
-|`gen:docs-watch`|Runs the gen:docs in watch mode.|
-|`build:docs`|Runs the scripts/Build.js script.|
-|`test`|Runs Jest unit tests.|
+|`start`|Runs the script for metadata generation and places it in watch mode and starts the app.|
 |`build:lib`|Runs the unit tests and builds the production resources into the lib directory.|
+|`test`|Runs unit tests using Jest and Enzyme.|
 |`deploy:docs`|Runs the build:docs and publishes everything from the build directory tothe gh-pages branch on Github.|
-|`script:help`|Shows the available commands described here.|
-
-## Install
-
-```bash
-$ yarn add spunky-ui-react
-```
-
-```bash
-$ npm install spunky-ui-react
-```
 
 ## Deployments
 
@@ -74,11 +77,3 @@ $ npm deploy:docs
 ## Issues
 
 [Here's a list of current known issues](https://github.com/davefud/spunky-ui-react/issues).
-
-## Docs
-
-[Component documentation](http://davefud.github.io/spunky-ui-react/)
-
-## About
-
-My library of reusable React components that I have created for personal projects.
