@@ -1,6 +1,6 @@
 {
   "name": "spunky-ui-react-build-template",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "main": "./lib/index.js",
   "private": true,
   "engines": {
