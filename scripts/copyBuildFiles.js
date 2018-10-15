@@ -3,7 +3,13 @@ var fse = require('fs-extra');
 
 const files = [
   'README.md',
-  'LICENSE'
+  'LICENSE',
+  'src/utils'
+];
+
+const excludeFiles = [
+  '.spec.js',
+  '.test.js'
 ];
 
 Promise.all(
@@ -17,6 +23,9 @@ function copyFile(file) {
     fse.copy(
       file,
       libPath,
+      { 
+        filter: (src) => !excludeFiles.some(test => src.includes(test))
+      },
       (err) => {
         if (err) throw err;
         resolve();
