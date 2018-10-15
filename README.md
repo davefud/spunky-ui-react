@@ -43,7 +43,7 @@ $ npm start
 
 While developing, you will probably rely mostly on `npm start`; however, there are additional scripts at your disposal:
 
-|`npm run <script>`|Description|
+|<nobr>`npm run <script>`</nobr>|Description|
 |------------------|-----------|
 |`start`|Runs the script for metadata generation and places it in watch mode and starts the app.|
 |`build:lib`|Runs the unit tests and builds the production resources into the lib directory.|
