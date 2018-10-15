@@ -13,13 +13,7 @@
 </p>
 
 
-# Reusable React Components
-
-My library of reusable React components that I have created for personal projects.
-
 ## Getting Started
-
----
 
 Follow these steps to get the project up and running:
 
@@ -45,8 +39,6 @@ While developing, you will probably rely mostly on `npm start`; however, there a
 
 ## Install
 
----
-
 ```bash
 $ yarn add spunky-ui-react
 ```
@@ -56,8 +48,6 @@ $ npm install spunky-ui-react
 ```
 
 ## Deployments
-
----
 
 ### Deploy to npm
 
@@ -83,12 +73,12 @@ $ npm deploy:docs
 
 ## Issues
 
----
-
 [Here's a list of current known issues](https://github.com/davefud/spunky-ui-react/issues).
 
 ## Docs
 
----
-
 [Component documentation](http://davefud.github.io/spunky-ui-react/)
+
+## About
+
+My library of reusable React components that I have created for personal projects.
