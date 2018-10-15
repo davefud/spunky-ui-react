@@ -18,9 +18,9 @@ My library of reusable React components that I have created for personal project
 
 ## Docs
 
-[Component documentation](http://davefud.github.io/spunky-ui-react/)
+See the components in action: [Component documentation](http://davefud.github.io/spunky-ui-react/)
 
-## Install
+## Install via npm
 
 ```bash
 $ yarn add spunky-ui-react
@@ -30,7 +30,7 @@ $ yarn add spunky-ui-react
 $ npm install spunky-ui-react
 ```
 
-## Notes For Development
+# Notes For Development & Deployments
 
 Follow these steps to get the project up and running:
 
@@ -41,7 +41,7 @@ $ npm install
 $ npm run start
 ```
 
-> While developing, you will probably rely mostly on `npm start`
+> While developing, you will rely mostly on `npm start`
 
 |script|Description|
 |------------------|-----------|
