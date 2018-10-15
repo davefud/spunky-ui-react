@@ -1,13 +1,13 @@
 {
-  "main.css": "/spunky-ui-react/static/css/main.8f6585a9.chunk.css",
-  "main.js": "/spunky-ui-react/static/js/main.c9454fda.chunk.js",
-  "main.js.map": "/spunky-ui-react/static/js/main.c9454fda.chunk.js.map",
-  "static/js/1.ce233972.chunk.js": "/spunky-ui-react/static/js/1.ce233972.chunk.js",
-  "static/js/1.ce233972.chunk.js.map": "/spunky-ui-react/static/js/1.ce233972.chunk.js.map",
+  "main.css": "/spunky-ui-react/static/css/main.2f4c2427.chunk.css",
+  "main.js": "/spunky-ui-react/static/js/main.3879b758.chunk.js",
+  "main.js.map": "/spunky-ui-react/static/js/main.3879b758.chunk.js.map",
+  "static/js/1.411127dd.chunk.js": "/spunky-ui-react/static/js/1.411127dd.chunk.js",
+  "static/js/1.411127dd.chunk.js.map": "/spunky-ui-react/static/js/1.411127dd.chunk.js.map",
   "runtime~main.js": "/spunky-ui-react/static/js/runtime~main.c53e98c3.js",
   "runtime~main.js.map": "/spunky-ui-react/static/js/runtime~main.c53e98c3.js.map",
-  "static/css/main.8f6585a9.chunk.css.map": "/spunky-ui-react/static/css/main.8f6585a9.chunk.css.map",
+  "static/css/main.2f4c2427.chunk.css.map": "/spunky-ui-react/static/css/main.2f4c2427.chunk.css.map",
   "index.html": "/spunky-ui-react/index.html",
-  "precache-manifest.30ed3256222d93e66cc22b6df7a0aaf9.js": "/spunky-ui-react/precache-manifest.30ed3256222d93e66cc22b6df7a0aaf9.js",
+  "precache-manifest.56e6bd454e9af35b544e9f02c3d84914.js": "/spunky-ui-react/precache-manifest.56e6bd454e9af35b544e9f02c3d84914.js",
   "service-worker.js": "/spunky-ui-react/service-worker.js"
 }
