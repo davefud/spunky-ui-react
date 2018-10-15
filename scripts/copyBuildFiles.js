@@ -3,8 +3,7 @@ var fse = require('fs-extra');
 
 const files = [
   'README.md',
-  'LICENSE',
-  'src/utils'
+  'LICENSE'
 ];
 
 const excludeFiles = [
@@ -24,7 +23,7 @@ function copyFile(file) {
       file,
       libPath,
       { 
-        filter: (src) => !excludeFiles.some(test => src.includes(test))
+        filter: (src) => !excludeFiles.some(f => src.includes(f))
       },
       (err) => {
         if (err) throw err;

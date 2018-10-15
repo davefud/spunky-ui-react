@@ -10,6 +10,11 @@ var paths = {
   output: path.join(__dirname, '../config', 'componentData.js')
 };
 
+const excludedDirectories = [
+  'internals',
+  'utils'
+];
+
 const enableWatchMode = process.argv.slice(2) == '--watch';
 if (enableWatchMode) {
   // Regenerate component metadata when components or examples change.
@@ -28,6 +33,7 @@ function generate(paths) {
       return getComponentData(paths, componentName)
     } catch(error) {
       errors.push('An error occurred while attempting to generate metadata for ' + componentName + '. ' + error);
+      return null;
     }
   });
   writeFile(paths.output, "module.exports = " + JSON.stringify(errors.length ? errors : componentData));
@@ -73,7 +79,10 @@ function getExampleFiles(examplesPath, componentName) {
 
 function getDirectories(filepath) {
   return fs.readdirSync(filepath).filter(function(file) {
-    return fs.statSync(path.join(filepath, file)).isDirectory();
+    let directory = fs.statSync(path.join(filepath, file));
+    return directory.isDirectory() && 
+      !excludedDirectories.some(directory => file.includes(directory));
+    // return fs.statSync(path.join(filepath, file)).isDirectory();
   });
 }
 
