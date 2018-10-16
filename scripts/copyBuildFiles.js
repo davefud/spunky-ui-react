@@ -6,11 +6,6 @@ const files = [
   'LICENSE'
 ];
 
-const excludeFiles = [
-  '.spec.js',
-  '.test.js'
-];
-
 Promise.all(
   files.map((file) => copyFile(file))
 )
@@ -22,9 +17,6 @@ function copyFile(file) {
     fse.copy(
       file,
       libPath,
-      { 
-        filter: (src) => !excludeFiles.some(f => src.includes(f))
-      },
       (err) => {
         if (err) throw err;
         resolve();

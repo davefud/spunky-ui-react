@@ -82,7 +82,6 @@ function getDirectories(filepath) {
     let directory = fs.statSync(path.join(filepath, file));
     return directory.isDirectory() && 
       !excludedDirectories.some(directory => file.includes(directory));
-    // return fs.statSync(path.join(filepath, file)).isDirectory();
   });
 }
 
