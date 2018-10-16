@@ -51,6 +51,55 @@ $ npm run start
 |`test`|Runs unit tests using Jest and Enzyme.|
 |`deploy:docs`|Runs the build:docs and publishes everything from the build directory tothe gh-pages branch on Github.|
 
+## Creating New Components
+
+1. Create new directory for the component under `src/components`
+   * Example: `src/components/Label`
+2. Create the new component in that directory
+   *  Example: `src/components/Label/Label.js`
+3. Create an `index.js` file in the same directory
+   * Example: `src/components/Label/index.js`
+   ```javascript
+   export { default } from './Label';
+   ```
+4. Annotate above the function or Reacr Class with `/** Add message here */`
+    ```javascript
+    /** Label with required field display, htmlFor, and block styling */
+    function Label({htmlFor, label, required}) {
+      return (
+        <label style={{display: 'block'}} htmlFor={htmlFor}>
+          {label} { required && <span style={{color: 'red'}}> *</span> }
+        </label>
+      )
+    }
+    ```
+5. Annotate each propType
+   ```javascript
+   Label.propTypes = {
+      /** HTML ID for associated input */
+      htmlFor: PropTypes.string.isRequired,
+
+      /** Label text */
+      label: PropTypes.string.isRequired,
+
+      /** Display asterisk after label if true */
+      required: PropTypes.bool
+   };
+   ```
+6. Create an new directory for the example using the component under `src/docs/examples`
+   * Example: `src/docs/examples/Label`
+7. Create one or more examples using the component and annotate the function
+   * Example: `src/docs/examples/Label/ExampleRequired.js`
+   ```javascript
+   /** Label for a required input */
+   export default function ExampleRequired() {
+      return <Label htmlFor='test'
+      label='Required Label' 
+      required={true} />;
+   }
+   ```
+
+
 ## Deployments
 
 ### Deploy to npm
