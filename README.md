@@ -126,9 +126,9 @@ $ npm deploy:docs
 
 ## Issues
 
-[Here's a list of current known issues](https://github.com/davefud/spunky-ui-react/issues).
+Here's a list of current [known issues](https://github.com/davefud/spunky-ui-react/issues).
 
 
 ## License
 
-[Spunky UI React is licensed under the MIT License](https://github.com/davefud/spunky-ui-react/blob/master/LICENSE.txt)
+Spunky UI React is licensed under the [MIT License](https://github.com/davefud/spunky-ui-react/blob/master/LICENSE.txt)
