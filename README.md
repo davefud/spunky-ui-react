@@ -3,18 +3,19 @@
 </h3>
 
 <p align="center">
-  Yet Another React Component Library Library
+  A React component development environment and style guide
 </p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/spunky-ui-react"><img src="https://img.shields.io/npm/v/spunky-ui-react.svg?style=flat-square"></a>
   <a href="https://www.npmjs.com/package/spunky-ui-react"><img src="https://img.shields.io/npm/dm/spunky-ui-react.svg?style=flat-square"></a>
   <a href="https://travis-ci.org/davefud/spunky-ui-react"><img src="https://img.shields.io/travis/davefud/spunky-ui-react/master.svg?style=flat-square"></a>
+  <a href="https://github.com/davefud/spunky-ui-react/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
 </p>
 
 ## About
 
-My library of reusable React components that I have created for personal projects.
+Created from [create-react-app](https://github.com/facebook/create-react-app) as a development environment for React components and style guide.
 
 ## Docs
 
@@ -77,3 +78,8 @@ $ npm deploy:docs
 ## Issues
 
 [Here's a list of current known issues](https://github.com/davefud/spunky-ui-react/issues).
+
+
+## License
+
+[Spunky React UI is licensed under the MIT License](https://github.com/davefud/spunky-ui-react/blob/master/LICENSE.txt)
