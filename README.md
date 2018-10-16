@@ -1,6 +1,6 @@
-<h3 align="center">
+<h2 align="center">
   Spunky UI React
-</h3>
+</h2>
 
 <p align="center">
   A React component development environment and style guide
@@ -42,6 +42,8 @@ $ npm install
 $ npm run start
 ```
 
+### Main Scripts
+
 > While developing, you will rely mostly on `npm start`
 
 |script|Description|
@@ -49,7 +51,32 @@ $ npm run start
 |`start`|Runs the script for metadata generation and places it in watch mode and starts the app.|
 |`build:lib`|Runs the unit tests and builds the production resources into the lib directory.|
 |`test`|Runs unit tests using Jest and Enzyme.|
-|`deploy:docs`|Runs the build:docs and publishes everything from the build directory tothe gh-pages branch on Github.|
+|`deploy:docs`|Runs the build script and publishes everything from the build directory to the gh-pages branch on Github.|
+
+#### All Scripts
+
+<details>
+
+```json
+  "scripts": {
+    "prestart": "npm run gen:docs",
+    "start": "npm-run-all --parallel start:docs gen:docs-watch",
+    "start:docs": "node scripts/start.js",
+    "gen:docs": "node scripts/generateComponentData.js",
+    "gen:docs-watch": "npm run gen:docs -- --watch",
+    "prebuild:lib": "rimraf lib",
+    "build:lib": "npm-run-all --parallel build:commonjs build:css build:copy-files",
+    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
+    "build:css": "cpx \"./src/components/**/*.css\" ./lib",
+    "build:copy-files": "node scripts/copyBuildFiles.js",
+    "predeploy:docs": "npm run build:docs",
+    "deploy:docs": "gh-pages -d build",
+    "build:docs": "node scripts/build.js",
+    "test": "node scripts/test.js"
+  }
+```
+
+</details>
 
 ### Creating New Components
 
@@ -62,7 +89,7 @@ $ npm run start
    ```javascript
    export { default } from './Label';
    ```
-4. Annotate above the function or Reacr Class with `/** Add message here */`
+4. Annotate above the function or React Class with `/** Add message here */`
     ```javascript
     /** Label with required field display, htmlFor, and block styling */
     function Label({htmlFor, label, required}) {
@@ -85,7 +112,12 @@ $ npm run start
       /** Display asterisk after label if true */
       required: PropTypes.bool
    };
+
+   Label.defaultProps = {
+     required: false
+   }
    ```
+   > No need to annotate defaultProps these will be picked up automatically if they are defined.
 6. Create an new directory for the example using the component under `src/docs/examples`
    * Example: `src/docs/examples/Label`
 7. Create one or more examples using the component and annotate the function
