@@ -31,7 +31,7 @@ $ yarn add spunky-ui-react
 $ npm install spunky-ui-react
 ```
 
-## Notes For Development & Deployments
+## Notes For Development Testing, and Deployments
 
 Follow these steps to get the project up and running:
 
@@ -51,7 +51,8 @@ $ npm run start
 |`start`|Runs the script for metadata generation and places it in watch mode and starts the app.|
 |`build:lib`|Runs the unit tests and builds the production resources into the lib directory.|
 |`test`|Runs unit tests using Jest and Enzyme.|
-|`deploy:docs`|Runs the build script and publishes everything from the build directory to the gh-pages branch on Github.|
+|`deploy:docs`|Bumps the package patch version, runs the build script and publishes everything from the build directory to the gh-pages branch on Github.|
+|`test-coverage`|Runs the Jest code coverage that is collected and reported in the output.|
 
 #### All Scripts
 
@@ -69,10 +70,11 @@ $ npm run start
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
     "build:css": "cpx \"./src/components/**/*.css\" ./lib",
     "build:copy-files": "node scripts/copyBuildFiles.js",
-    "predeploy:docs": "npm run build:docs",
+    "predeploy:docs": "npm version patch && npm run build:docs",
     "deploy:docs": "gh-pages -d build",
     "build:docs": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "test-coverage": "npm run test -- --coverage"
   }
 ```
 
@@ -131,6 +133,9 @@ $ npm run start
    }
    ```
 
+### Testing
+
+> TODO: Our convention for writing unit tests in same directory as component or function to test, run unit tests, run test coverage, etc.
 
 ### Deployments
 

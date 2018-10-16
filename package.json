@@ -1,8 +1,16 @@
 {
   "name": "spunky-ui-react-build-template",
   "version": "0.3.0",
+  "description": "A React component development environment and style guide",
+  "homepage": "http://davefud.github.io/spunky-ui-react/",
+  "bugs": "https://github.com/davefud/spunky-ui-react/issues",
+  "license": "MIT",
   "main": "./lib/index.js",
   "private": true,
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/davefud/spunky-ui-react.git"
+  },
   "engines": {
     "node": ">=4.0.0"
   },
@@ -14,11 +22,13 @@
   "files": [
     "lib"
   ],
+  
   "keywords": [
     "components",
     "react",
     "react-component",
-    "react component library"
+    "react-component-library",
+    "react-style-guide"
   ],
   "devDependencies": {
     "@babel/cli": "^7.1.2",
@@ -88,7 +98,6 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
-  "homepage": "http://davefud.github.io/spunky-ui-react/",
   "scripts": {
     "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel start:docs gen:docs-watch",
@@ -100,10 +109,11 @@
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore /**/*.spec.js,/**/*.test.js",
     "build:css": "cpx \"./src/components/**/*.css\" ./lib",
     "build:copy-files": "node scripts/copyBuildFiles.js",
-    "predeploy:docs": "npm run build:docs",
+    "predeploy:docs": "npm version patch && npm run build:docs",
     "deploy:docs": "gh-pages -d build",
     "build:docs": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "test-coverage": "npm run test -- --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
