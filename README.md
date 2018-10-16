@@ -51,7 +51,7 @@ $ npm run start
 |`test`|Runs unit tests using Jest and Enzyme.|
 |`deploy:docs`|Runs the build:docs and publishes everything from the build directory tothe gh-pages branch on Github.|
 
-## Creating New Components
+### Creating New Components
 
 1. Create new directory for the component under `src/components`
    * Example: `src/components/Label`
@@ -100,9 +100,9 @@ $ npm run start
    ```
 
 
-## Deployments
+### Deployments
 
-### Deploy to npm
+#### Deploy to npm
 
 ```bash
 $ cd lib/
@@ -114,7 +114,7 @@ $ cd lib/
 $ npm publish
 ```
 
-### Deploy to Github Pages
+#### Deploy to Github Pages
 
 ```bash
 $ yarn deploy:docs
