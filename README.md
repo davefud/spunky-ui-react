@@ -15,7 +15,7 @@
 
 ## About
 
-Created from [create-react-app](https://github.com/facebook/create-react-app) as a development environment for React components and style guide.
+Created from [create-react-app](https://github.com/facebook/create-react-app) as a development environment for React components and style guide. It lists the component `propTypes` including the name, type, required, default, description, and component examples with code. All of the documentation is generated directly from the component code.
 
 ## Docs
 
