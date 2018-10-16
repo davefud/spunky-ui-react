@@ -131,4 +131,4 @@ $ npm deploy:docs
 
 ## License
 
-[Spunky React UI is licensed under the MIT License](https://github.com/davefud/spunky-ui-react/blob/master/LICENSE.txt)
+[Spunky UI React is licensed under the MIT License](https://github.com/davefud/spunky-ui-react/blob/master/LICENSE.txt)
