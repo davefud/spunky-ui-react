@@ -31,7 +31,7 @@ $ yarn add spunky-ui-react
 $ npm install spunky-ui-react
 ```
 
-# Notes For Development & Deployments
+## Notes For Development & Deployments
 
 Follow these steps to get the project up and running:
 
