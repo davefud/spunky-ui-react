@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/davefud/spunky-ui-react#readme">
-    <img alt="Spunky UI React" src="https://github.com/davefud/spunky-ui-react/raw/master/public/logo.png" height="90" width="128">
+    <img alt="Spunky UI React" src="https://github.com/davefud/spunky-ui-react/raw/master/public/logo.png" height="181" width="256">
   </a>
 </p>
 
@@ -27,11 +27,23 @@ Created from an [ejected](https://github.com/facebook/create-react-app/blob/mast
 
 See the components in action: [Component documentation](http://davefud.github.io/spunky-ui-react/)
 
-## Install via npm
+## Getting Started
+
+Make sure you have at least [Node.js v6](https://nodejs.org/):
+
+```bash
+$ node -v
+
+v6.14.3
+```
+
+### Install via Yarn
 
 ```bash
 $ yarn add spunky-ui-react
 ```
+
+### Install via NPM
 
 ```bash
 $ npm install spunky-ui-react
@@ -52,6 +64,8 @@ $ npm run start
 
 > While developing, you will rely mostly on `npm start`
 
+> This is not the full list of scripts, run `yarn run` to see all scripts.
+
 |script|Description|
 |------------------|-----------|
 |`start`|Runs the script for metadata generation and places it in watch mode and starts the app.|
@@ -59,32 +73,6 @@ $ npm run start
 |`test`|Runs unit tests using Jest and Enzyme.|
 |`deploy:docs`|Bumps the package patch version, runs the build script and publishes everything from the build directory to the gh-pages branch on Github.|
 |`test-coverage`|Runs the Jest code coverage that is collected and reported in the output.|
-
-#### All Scripts
-
-<details>
-
-```json
-  "scripts": {
-    "prestart": "npm run gen:docs",
-    "start": "npm-run-all --parallel start:docs gen:docs-watch",
-    "start:docs": "node scripts/start.js",
-    "gen:docs": "node scripts/generateComponentData.js",
-    "gen:docs-watch": "npm run gen:docs -- --watch",
-    "prebuild:lib": "rimraf lib",
-    "build:lib": "npm-run-all --parallel build:commonjs build:css build:copy-files",
-    "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore spec.js",
-    "build:css": "cpx \"./src/components/**/*.css\" ./lib",
-    "build:copy-files": "node scripts/copyBuildFiles.js",
-    "predeploy:docs": "npm version patch && npm run build:docs",
-    "deploy:docs": "gh-pages -d build",
-    "build:docs": "node scripts/build.js",
-    "test": "node scripts/test.js",
-    "test-coverage": "npm run test -- --coverage"
-  }
-```
-
-</details>
 
 ### Creating New Components
 
@@ -137,6 +125,11 @@ $ npm run start
       label='Required Label' 
       required={true} />;
    }
+   ```
+8. Update the `index.js` file to export the new component
+
+   ```javascript
+   export {default as PasswordInput} from './PasswordInput';
    ```
 
 ### Testing
