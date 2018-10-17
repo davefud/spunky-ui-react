@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/davefud/spunky-ui-react/static/js/runtime~main.f2b5ef36.js"
   },
   {
-    "revision": "b9644dd7d970da76de5d",
-    "url": "/davefud/spunky-ui-react/static/js/main.b9644dd7.chunk.js"
+    "revision": "4db4254b96d0ad8b9238",
+    "url": "/davefud/spunky-ui-react/static/js/main.4db4254b.chunk.js"
   },
   {
     "revision": "197bff2b61bfdfbbea0b",
     "url": "/davefud/spunky-ui-react/static/js/1.197bff2b.chunk.js"
   },
   {
-    "revision": "b9644dd7d970da76de5d",
+    "revision": "4db4254b96d0ad8b9238",
     "url": "/davefud/spunky-ui-react/static/css/main.34f4be13.chunk.css"
   },
   {
-    "revision": "87f356230ba91406982d148585168eb7",
+    "revision": "aad9444146ad49dc03ba040c268c08c1",
     "url": "/davefud/spunky-ui-react/index.html"
   }
 ];
