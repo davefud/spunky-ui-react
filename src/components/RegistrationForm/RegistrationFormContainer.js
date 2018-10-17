@@ -27,7 +27,7 @@ class RegistrationFormContainer extends React.Component {
   // For simplicity, just returning % of min length entered.
   // Could enhance with checks for number, special char, unique characters, etc.
   passwordQuality(password) {
-    if (!password) return null;
+    if (!password) return 0;
     if (password.length >= this.props.minPasswordLength) return 100;
     const percentOfMinLength = parseInt(password.length/this.props.minPasswordLength * 100, 10);
     return percentOfMinLength;

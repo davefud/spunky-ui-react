@@ -2,7 +2,7 @@
   "name": "spunky-ui-react-build-template",
   "version": "0.3.1",
   "description": "A React component development environment and style guide",
-  "homepage": "http://davefud.github.io/spunky-ui-react/",
+  "homepage": "https://github.com/davefud/spunky-ui-react#readme",
   "bugs": "https://github.com/davefud/spunky-ui-react/issues",
   "license": "MIT",
   "main": "./lib/index.js",
@@ -12,7 +12,7 @@
     "url": "https://github.com/davefud/spunky-ui-react.git"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.0.0"
   },
   "author": {
     "name": "David Glass",
