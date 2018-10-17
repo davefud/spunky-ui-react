@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/davefud/spunky-ui-react#readme">
-    <img alt="Spunky UI React" src="https://github.com/davefud/spunky-ui-react/raw/master/public/logo.png" height="181" width="256">
+    <img alt="Spunky UI React" src="https://github.com/davefud/spunky-ui-react/raw/master/public/logo.png" height="90" width="128">
   </a>
 </p>
 
