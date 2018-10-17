@@ -1,13 +1,13 @@
 {
-  "main.css": "/spunky-ui-react/static/css/main.2f4c2427.chunk.css",
-  "main.js": "/spunky-ui-react/static/js/main.48bdbba2.chunk.js",
-  "main.js.map": "/spunky-ui-react/static/js/main.48bdbba2.chunk.js.map",
-  "static/js/1.61613400.chunk.js": "/spunky-ui-react/static/js/1.61613400.chunk.js",
-  "static/js/1.61613400.chunk.js.map": "/spunky-ui-react/static/js/1.61613400.chunk.js.map",
-  "runtime~main.js": "/spunky-ui-react/static/js/runtime~main.c53e98c3.js",
-  "runtime~main.js.map": "/spunky-ui-react/static/js/runtime~main.c53e98c3.js.map",
-  "static/css/main.2f4c2427.chunk.css.map": "/spunky-ui-react/static/css/main.2f4c2427.chunk.css.map",
-  "index.html": "/spunky-ui-react/index.html",
-  "precache-manifest.1da337f6a999fd573ca3ddfe57d18359.js": "/spunky-ui-react/precache-manifest.1da337f6a999fd573ca3ddfe57d18359.js",
-  "service-worker.js": "/spunky-ui-react/service-worker.js"
+  "main.css": "/davefud/spunky-ui-react/static/css/main.34f4be13.chunk.css",
+  "main.js": "/davefud/spunky-ui-react/static/js/main.b9644dd7.chunk.js",
+  "main.js.map": "/davefud/spunky-ui-react/static/js/main.b9644dd7.chunk.js.map",
+  "static/js/1.197bff2b.chunk.js": "/davefud/spunky-ui-react/static/js/1.197bff2b.chunk.js",
+  "static/js/1.197bff2b.chunk.js.map": "/davefud/spunky-ui-react/static/js/1.197bff2b.chunk.js.map",
+  "runtime~main.js": "/davefud/spunky-ui-react/static/js/runtime~main.f2b5ef36.js",
+  "runtime~main.js.map": "/davefud/spunky-ui-react/static/js/runtime~main.f2b5ef36.js.map",
+  "static/css/main.34f4be13.chunk.css.map": "/davefud/spunky-ui-react/static/css/main.34f4be13.chunk.css.map",
+  "index.html": "/davefud/spunky-ui-react/index.html",
+  "precache-manifest.a9bba146bd05e5b435a48f677ed61c60.js": "/davefud/spunky-ui-react/precache-manifest.a9bba146bd05e5b435a48f677ed61c60.js",
+  "service-worker.js": "/davefud/spunky-ui-react/service-worker.js"
 }

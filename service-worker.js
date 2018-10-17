@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/spunky-ui-react/precache-manifest.1da337f6a999fd573ca3ddfe57d18359.js"
+  "/davefud/spunky-ui-react/precache-manifest.a9bba146bd05e5b435a48f677ed61c60.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/spunky-ui-react/index.html", {
+workbox.routing.registerNavigationRoute("/davefud/spunky-ui-react/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
