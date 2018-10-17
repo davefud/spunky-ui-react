@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://github.com/davefud/spunky-ui-react#readme">
+    <img alt="Spunky UI React" src="https://github.com/davefud/spunky-ui-react/raw/master/public/logo.png" height="181" width="256">
+  </a>
+</p>
+
 <h2 align="center">
   Spunky UI React
 </h2>
@@ -135,7 +141,7 @@ $ npm run start
 
 ### Testing
 
-> TODO: Our convention for writing unit tests in same directory as component or function to test, run unit tests, run test coverage, etc.
+> TODO: Our convention for writing unit tests in same directory as component or function to test, run unit tests, run test coverage, etc. Also, explain Jest snapshot testing
 
 ### Deployments
 
