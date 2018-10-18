@@ -7,11 +7,11 @@ import '../prism-default.css';
 class CodeExample extends React.Component {
   render() {
     return (
-      <pre ref={ref => { this.element = ref }}>
-        <PrismCode className="language-jsx">
-          {this.props.children}
-        </PrismCode>
-      </pre>
+        <pre ref={ref => { this.element = ref }}>
+          <PrismCode className="language-jsx">
+            {this.props.children}
+          </PrismCode>
+        </pre>
     )
   }
 }
