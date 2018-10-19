@@ -26,6 +26,10 @@ table {
   margin-bottom: 25px;
 }
 
+.component-description__p {
+  color: #000;
+}
+
 /* label {
   position: relative;
 } */
@@ -46,6 +50,10 @@ table {
 } */
 
 /* Documentation site component styles */
+.componentpage h2 {
+  margin: 0 0 6px;
+}
+
 .example {
   border: solid 1px #d3d3d3;
   /* padding: 15px;
@@ -77,7 +85,12 @@ button:hover {
 
 .codewrapper {
   background: #f5f5f5;
-  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.importstatement {
+  color: #999;
+  font-family: Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 14px;
 }
 
 .props tr td:nth-last-of-type(3) {
