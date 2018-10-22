@@ -1,11 +1,13 @@
 import React from 'react';
 import EyeIcon from 'spunky-ui-react/EyeIcon';
 
-/** Eye SVG Icon */
+/** Acailable Icons */
 export default function Example() {
     return (
-        <div>
-            <div><EyeIcon /></div>
+        <div className={'availableIcons--container'}>
+            <div className={'availableIcons--preview'}>
+                <div><EyeIcon /></div>
+            </div>
         </div>
     );
 }

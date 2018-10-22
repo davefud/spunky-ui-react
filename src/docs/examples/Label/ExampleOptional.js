@@ -1,7 +1,7 @@
 import React from 'react';
 import Label from 'spunky-ui-react/Label';
 
-/** Label for an optional input */
+/** Standard Use */
 export default function ExampleOptional() {
     return <Label htmlFor='test' label='Normal Label' />;
 }

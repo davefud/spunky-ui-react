@@ -48,7 +48,7 @@ class Example extends React.Component {
             onMouseDown={this.handleMouseDown}
             className={'button'}
             style={{
-              background: showCode ? '#f5f5f5' : '#fff',
+              background: showCode ? '#eef3f7' : '#fff',
             }}>
             {showCode ? "Hide" : "Show"} code
           </button>

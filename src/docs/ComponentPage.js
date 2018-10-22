@@ -6,9 +6,14 @@ import Props from './Props';
 const ComponentPage = ({component}) => {
   const {name, description, props, examples} = component;
 
+  // TODO: generate category somehow from generateComponentData by using some convention (sub directories?)
+  // add category as a prop for heading1 below?
+
   return (
-    <div className="componentpage">
-      <h2>{name}</h2>
+    <div className="componentPage">
+      <h1 className={'componentPage--heading1'}>Components</h1>
+
+      <h2 className={'componentPage--heading2'}>{name}</h2>
       
       <div className='importstatement'>{`import ${name} from 'spunky-ui-react/${name}';`}</div>
 
@@ -20,7 +25,7 @@ const ComponentPage = ({component}) => {
 
       { props ? <Props props={props} /> : "This component accepts no props." }
 
-      <h3>Example{examples.length > 1 && "s"}</h3>
+      <h3 className={'componentPage--heading3'}>Example{examples.length > 1 && "s"}</h3>
       
       {
         examples.length > 0 ?

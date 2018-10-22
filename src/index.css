@@ -13,10 +13,6 @@ a, a:visited {
   color: #666666;
 }
 
-.clear {
-  clear: both;
-}
-
 th {
   border-bottom: solid 1px #d3d3d3;
 }
@@ -31,9 +27,6 @@ table {
   margin-bottom: 25px;
 }
 
-.component-description__p {
-  color: #000;
-}
 
 /* label {
   position: relative;
@@ -55,8 +48,40 @@ table {
 } */
 
 /* Documentation site component styles */
-.componentpage h2 {
+.component-description__p {
+  color: #444444;
+}
+
+.clear {
+  clear: both;
+}
+
+.componentPage h1 {
   margin: 0 0 6px;
+}
+
+.componentPage--heading1 {
+  font-size: 38px;
+  display: block;
+  position: relative;
+  padding-bottom: 1.125rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.componentPage--heading1:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4.5rem;
+  height: 4px;
+  background-color: #00adf7;
+  border-radius: 4px;
+}
+
+.componentPage--heading3 {
+  border-bottom: thin solid #d3d3d3;
 }
 
 .example {
@@ -141,6 +166,10 @@ table {
   font-size: 13px;
 }
 
+.props {
+  font-weight: 500;
+}
+
 .props tr td:nth-last-of-type(3) {
   text-align: center;
 }
@@ -157,9 +186,41 @@ table {
 
 .navigation {
   float: left;
-  width: 250px;
+  width: 200px;
   list-style-type: none;
   padding: 0 0 0 50px;
+}
+
+.navigation--search {
+  padding: 16px;
+  margin-right: 25px;
+}
+
+.navigation--input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  color: #444;
+  background-color: #fff;
+  font-size: 15px;
+  border: 1px rgb(240, 243, 245) solid;
+  border-radius: 3px;
+  transition: border-color ease-in-out .15s;
+}
+
+.navigation--input:focus {
+  border-color: #07a;
+  border: 1px #07a solid;
+  outline: 0;
+}
+
+.navigation--listItem {
+  margin: 8px 0 8px 0;
+  font-size: 15px;
+}
+
+.navigation--link {
+  text-decoration: none;
 }
 
 .navmenu {
@@ -168,9 +229,9 @@ table {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
-  overflow: scroll;
-  background-color: #eef3f7;
+  width: 250px;
+  overflow: auto;
+  background-color: #07a;
 }
 
 .navmenu h1:first-of-type {
@@ -180,25 +241,41 @@ table {
   display: block;
   padding: 15px;
   border-bottom: 1px solid #e8e8e8;
-  color: #1978c8;
+  color: #fcfcfc;
   text-align: center;
 }
 
+.navmenu li > a {
+  color: #fff;
+  font-weight: 500;
+}
+
 .propname {
-  color: #07a
-  ;
+  color: #07a;
 }
 
 .proptype {
-  color: #690;
+  color: #1bab6b;
 }
 
 .main {
   max-width: 1000px;
-  padding: 15px 30px;
+  padding: 15px 32px;
   margin: 0 auto 50px auto;
 }
 
 .doc {
-  padding-left: 300px;
+  padding-left: 250px;
+}
+
+.availableIcons--container {
+  margin-right: 2rem;
+}
+
+.availableIcons--preview {
+  padding: 16px;
+  border: 1px #ededed solid;
+  border-radius: 3px;
+  /* width: 100%; */
+  display: inline-block;
 }
