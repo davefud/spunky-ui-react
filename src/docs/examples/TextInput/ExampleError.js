@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextInput } from 'spunky-ui-react';
+import TextInput from 'spunky-ui-react/TextInput';
 
 /** Required TextInput showing an error */
 export default class ExampleError extends React.Component {

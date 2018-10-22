@@ -9,12 +9,19 @@ export default class Docs extends React.Component {
     this.state = {
       route: window.location.hash.substr(1)
     };
+    this.handleHashChange = this.handleHashChange.bind(this);
   }
 
   componentDidMount() {
-    window.addEventListener('hashchange', () => {
-      this.setState({route: window.location.hash.substr(1)})
-    })
+    window.addEventListener('hashchange', this.handleHashChange);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('hashchange', this.handleHashChange);
+  }
+
+  handleHashChange() {
+    this.setState({route: window.location.hash.substr(1)});
   }
 
   render() {

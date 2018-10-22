@@ -1,5 +1,5 @@
 import React from 'react';
-import { EyeIcon } from 'spunky-ui-react';
+import EyeIcon from 'spunky-ui-react/EyeIcon';
 
 /** Eye SVG Icon */
 export default function Example() {

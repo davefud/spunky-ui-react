@@ -1,5 +1,5 @@
 import React from 'react';
-import { RegistrationForm } from 'spunky-ui-react';
+import RegistrationForm from 'spunky-ui-react/RegistrationForm';
 
 /**  Registration Form*/
 export default class ExampleRegistrationForm extends React.Component {
