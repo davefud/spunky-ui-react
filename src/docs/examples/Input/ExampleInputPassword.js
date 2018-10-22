@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from 'spunky-ui-react/Input';
+import { Input } from 'spunky-ui-react';
 
 /** All features for PasswordInput enabled */
 class ExampleInputPassword extends React.Component {

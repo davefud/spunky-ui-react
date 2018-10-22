@@ -10,7 +10,7 @@ const ComponentPage = ({component}) => {
     <div className="componentpage">
       <h2>{name}</h2>
       
-      <div className='importstatement'>{`import ${name} from 'spunky-ui-react/${name}';`}</div>
+      <div className='importstatement'>{`import { ${name} } from 'spunky-ui-react';`}</div>
 
       <div>
         <p className='component-description__p'>{description}</p>

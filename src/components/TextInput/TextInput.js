@@ -20,7 +20,7 @@ function TextInput({htmlId, name, label, type = 'text', required = false, onChan
 
             {children}
 
-            {error && <div className='error' style={{color: 'red', fontSize: '.75em', fontWeight: 'bold'}}>{error}</div>}
+            {error && <div style={{color: 'red', fontSize: '.75em', fontWeight: 'bold'}}>{error}</div>}
         </div>
     );
 };

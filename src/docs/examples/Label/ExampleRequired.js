@@ -1,5 +1,5 @@
 import React from 'react';
-import Label from 'spunky-ui-react/Label';
+import { Label } from 'spunky-ui-react';
 
 /** Label for a required input */
 export default function ExampleRequired() {

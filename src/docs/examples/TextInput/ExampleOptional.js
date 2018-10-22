@@ -1,5 +1,5 @@
 import React from 'react';
-import TextInput from 'spunky-ui-react/TextInput';
+import { TextInput } from 'spunky-ui-react';
 
 /** Optional TextInput */
 export default class ExampleOptional extends React.Component {
