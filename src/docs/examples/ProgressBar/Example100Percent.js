@@ -1,7 +1,11 @@
 import React from 'react';
 import ProgressBar from 'spunky-ui-react/ProgressBar';
 
-/** 100% progress and height of 20px */
+/** 100% progress */
 export default function Example100Percent() {
-    return <ProgressBar percent={100} width={150} height={20} />;
+    return <ProgressBar 
+                percent={100} 
+                width={450} 
+                height={25} 
+            />;
 }

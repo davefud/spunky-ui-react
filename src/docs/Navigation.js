@@ -9,15 +9,20 @@ const Navigation = ({components}) => {
         <input className={'navigation--input'} placeholder={'Filter by name'}></input>
       </div>
       <ul className="navigation">
-        {
-          components.map( name => {
-            return (
-              <li className={'navigation--listItem'} key={name}>
-                <a className={'navigation--link'} href={`#${name}`}>{name}</a>
-              </li>
-            )
-          })
-        }
+        <li className={'navigation--listItem'}>
+          <a className={'navigation--link'} href={`/#`}>Components</a>
+        </li>
+        <ul className="navigation">
+          {
+            components.map( name => {
+              return (
+                <li className={'navigation--listItem'} key={name}>
+                  <a className={'navigation--link'} href={`#${name}`}>{name}</a>
+                </li>
+              )
+            })
+          }
+        </ul>
       </ul>
     </div>
   )

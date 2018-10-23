@@ -30,7 +30,7 @@ class Input extends React.Component {
   render() {
     const { htmlId, value, label, error, onChange, placeholder, maxLength, showVisibilityToggle, quality, ...props } = this.props;
     const { showPassword } = this.state;
-    const svgString = encodeURIComponent(renderToStaticMarkup(<EyeIcon />));
+    const svgString = encodeURIComponent(renderToStaticMarkup(<EyeIcon size={16} />));
     const dataUri = `url("data:image/svg+xml,${svgString}") center / contain no-repeat`;
     let normalStyle = {
         padding: '10px 35px 10px 10px', 

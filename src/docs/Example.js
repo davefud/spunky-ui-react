@@ -29,9 +29,8 @@ class Example extends React.Component {
 
     return (
       <span>
-      {description && <h4>{description}</h4>}
+      {description && <h4 className={'example--heading4'}>{description}</h4>}
         <div className="examplewrapper">
-        
           <div className="example">
             <div className="exampleComponent">
               <ExampleComponent />
