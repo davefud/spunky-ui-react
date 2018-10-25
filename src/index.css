@@ -323,3 +323,25 @@ codewrapper-exit-active {
 .j210 {
   overflow: visible;
 }
+
+.progressbar {
+  background-color: #d3d3d3;
+  border-radius: 0px; /* 13px; (height of inner div) / 2 + padding */
+  padding: 0px; /* padding: 3px; */
+  width: 450px;
+}
+
+.progressbar>div {
+  background-color: #00695C;
+  width: 0%; /* Adjust with JavaScript */
+  height: 30px;
+  border-radius: 0px; /* 10px; */
+}
+
+.progressbar>div>div {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}

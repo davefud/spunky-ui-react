@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Example from './Example';
 import Props from './Props';
+import {PrismCode} from 'react-prism';
 
 const ComponentPage = ({component}) => {
   const {name, description, props, examples} = component;
@@ -14,8 +15,12 @@ const ComponentPage = ({component}) => {
       <h1 className={'componentPage--heading1'}>Components</h1>
 
       <h2 className={'componentPage--heading2'}>{name}</h2>
-      
-      <div className='importstatement'>{`import ${name} from 'spunky-ui-react/${name}';`}</div>
+
+      <pre style={{margin: '24px 0', padding: '12px 18px', borderRadius: '3px'}}>
+        <PrismCode className="language-jsx">
+        {`import ${name} from 'spunky-ui-react/${name}';`}
+        </PrismCode>
+      </pre>
 
       <div>
         <p className='componentPage--description'>{description}</p>
