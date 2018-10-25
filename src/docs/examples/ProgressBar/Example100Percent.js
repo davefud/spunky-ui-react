@@ -1,7 +1,7 @@
 import React from 'react';
 import ProgressBar from 'spunky-ui-react/ProgressBar';
 
-/** Linear Progress Indicator */
+/** Linear Progress Bar */
 export default class Example100Percent extends React.Component {
     state = {
         completed: 0

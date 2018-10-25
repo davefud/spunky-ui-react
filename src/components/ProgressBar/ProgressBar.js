@@ -4,10 +4,6 @@ import * as PercentUtils from '../utils/percentUtils';
 
 /** Progress bar with color coded status of progress */
 class ProgressBar extends React.Component {
-//   getColor = (percent) => {
-//     if (this.props.percent === 100) return 'green';
-//     return this.props.percent > 50 ? 'lightgreen' : 'red';
-//   }
 
   render() {
     const {percent, width} = this.props;
