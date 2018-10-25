@@ -40,7 +40,7 @@ class Example extends React.Component {
     return (
       <span>
       {description && <h4 className={'example--heading4'}>{description}</h4>}
-        <div style={{padding: '0 8px', marginLeft: 0, marginRight: 0, position: 'relative', marginBottom: '40px'}}>
+        <div style={{marginLeft: 0, marginRight: 0, position: 'relative', marginBottom: '40px'}}>
           <div>
             <div style={{position: 'absolute', top: 0, right: '28px', display: 'flex'}}>
               <button className="j58 j52" type="button" arial-label='Show the cource code' title='Show the source' onClick={this.toggleCode}
