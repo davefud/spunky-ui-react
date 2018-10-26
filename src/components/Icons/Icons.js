@@ -1,35 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import withStyles from '../with-styles'
-// import styles, { keyframes } from './styles'
 import * as icons from './AvailableIcons'
 
-const Icons = ({ name, paths, viewBox, width, height, ariaHidden = true, className }) => {
+const Icons = ({ name, paths, viewBox, width, height, ariaHidden = true, className, color }) => {
   const iconPaths = name ? icons[name] : paths
-
-/**
- * 
- *     <svg
-      className={`c11n-icon ${classNames.root}`}
-      viewBox={`0 0 ${viewBox} ${viewBox}`}
-      aria-hidden={ariaHidden}
-    >
-      {iconPaths &&
-        iconPaths.map((pathProps, i) => <path {...pathProps} key={i} />)}
-    </svg>
- * 
- */
 
   return (
     <svg
-      width={width}
-      height={height}
+      width={`${width}`}
+      height={`${height}`}
       className={className}
       viewBox={`0 0 ${viewBox} ${viewBox}`}
-      aria-hidden={ariaHidden}
-    >
-      {iconPaths &&
-        iconPaths.map((pathProps, i) => <path {...pathProps} key={i} />)}
+      aria-hidden={ariaHidden}>
+      <g fill={color}>
+        {iconPaths && iconPaths.map((pathProps, i) => <path {...pathProps} key={i} />)}
+      </g>
     </svg>
   );
 }
@@ -105,8 +90,8 @@ Icons.defaultProps = {
   spin: false,
   styles: {},
   viewBox: 24,
-  width: 'auto',
-  height: 'auto'
+  width: '100%',
+  height: '100%'
 }
 
 export default Icons
