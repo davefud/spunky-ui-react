@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 // import styles, { keyframes } from './styles'
 import * as icons from './AvailableIcons'
 
-const Icons = ({ name, paths, viewBox, ariaHidden = true, className }) => {
+const Icons = ({ name, paths, viewBox, width, height, ariaHidden = true, className }) => {
   const iconPaths = name ? icons[name] : paths
 
 /**
@@ -22,8 +22,8 @@ const Icons = ({ name, paths, viewBox, ariaHidden = true, className }) => {
 
   return (
     <svg
-      width={viewBox}
-      height={viewBox}
+      width={width}
+      height={height}
       className={className}
       viewBox={`0 0 ${viewBox} ${viewBox}`}
       aria-hidden={ariaHidden}
@@ -78,7 +78,23 @@ Icons.propTypes = {
   /**
    * Add custom styles to the icon
    */
-  styles: PropTypes.object
+  styles: PropTypes.object,
+
+  /**
+   *  Custom viewbox width
+   */
+  width: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string
+  ]),
+
+  /**
+   *  Custom viewbox height
+   */
+  height: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string
+  ])
 }
 
 Icons.defaultProps = {
@@ -88,7 +104,9 @@ Icons.defaultProps = {
   size: 1,
   spin: false,
   styles: {},
-  viewBox: 32
+  viewBox: 24,
+  width: 'auto',
+  height: 'auto'
 }
 
 export default Icons

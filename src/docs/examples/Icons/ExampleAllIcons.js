@@ -18,13 +18,13 @@ export default function ExampleAllIcons() {
     ];
 
     let icons = availableIcons.map((icon) => {
-        let codeIcon = Icons({name: icon, paths: null, viewBox: 24, className: ''});
+        let codeIcon = Icons({name: icon, viewBox: 24, width: 75, height:'auto', className: ''});
         return (
             <div key={icon} style={{margin: '5px', display: 'inline-block', }}>
-                <div style={{padding: '12px', border: '1px solid lightgray', width: 24, height: 24, borderRadius: '3px'}} title={icon}>
+                <div style={{padding: '12px', border: '1px solid lightgray', borderRadius: '3px', justifyContent: 'center'}} title={icon}>
                     {codeIcon}
                 </div>
-                <span style={{margin: '0', width: 50, maxWidth: 50, fontSize: '12px', color: 'rgba(0,0,0,.6)', overflow: 'hidden', textOverflow: 'ellipsis'}} title={icon}>
+                <span style={{textAlign: 'center', width: 50, maxWidth: 50, fontSize: '12px', color: 'rgba(0,0,0,.6)', overflow: 'hidden', textOverflow: 'ellipsis'}} title={icon}>
                     <Label htmlFor='' label={icon} />
                 </span>
             </div>
