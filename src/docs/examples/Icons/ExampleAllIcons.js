@@ -2,6 +2,7 @@ import React from 'react';
 import Icons from 'spunky-ui-react/Icons';
 import Label from 'spunky-ui-react/Label'
 
+/** All Icons */
 export default function ExampleAllIcons() {
     let availableIcons = [
         'code',
