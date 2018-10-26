@@ -17,7 +17,7 @@ class Navigation extends React.Component {
 
     if (value) {
       components = this.props.components.filter( component => {
-          return component.toLowerCase().indexOf(ev.target.value) > -1;
+          return component.toLowerCase().indexOf(value) > -1;
       });
     }
 
