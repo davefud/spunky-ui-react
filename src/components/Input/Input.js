@@ -55,6 +55,7 @@ class Input extends React.Component {
             top: 0,
             bottom: 0,
             width: '16px',
+            height: '40px',
             background: dataUri
           }} onClick={this.toggleShowPassword} />
           
