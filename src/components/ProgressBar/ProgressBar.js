@@ -6,13 +6,13 @@ import * as PercentUtils from '../utils/percentUtils';
 class ProgressBar extends React.Component {
 
   render() {
-    const {percent, width} = this.props;
+    const {percent, width, showPercentage} = this.props;
     const percentWidth = PercentUtils.getWidthAsPercentOfTotalWidth(percent, width);
 
     return (
-      <div className="progressbar" style={{width}}>
+      <div className="progressbar" style={{width: width}}>
         <div style={{width: percentWidth, backgroundColor: '#00695C'}}>
-          <div>{`${percent.toFixed(0)}%`}</div>
+          {showPercentage && <div>{`${percent.toFixed(0)}%`}</div>}
         </div>
       </div>
     );
@@ -27,11 +27,16 @@ ProgressBar.propTypes = {
   width: PropTypes.number.isRequired,
 
   /** Bar height */
-  height: PropTypes.number
+  height: PropTypes.number,
+
+  /** Show percentage text */
+  showPercentage: PropTypes.bool
 };
 
 ProgressBar.defaultProps = {
-  height: 5
+  height: 5,
+  width: 250,
+  showPercentage: false
 };
 
 export default ProgressBar;
