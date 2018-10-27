@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ProgressBar from '../ProgressBar';
-import EyeIcon from '../EyeIcon'
+import Icons from '../Icons';
 import Label from '../Label';
 import { renderToStaticMarkup } from 'react-dom/server';
 
@@ -30,7 +30,7 @@ class Input extends React.Component {
   render() {
     const { htmlId, value, label, error, onChange, placeholder, maxLength, showVisibilityToggle, quality, ...props } = this.props;
     const { showPassword } = this.state;
-    const svgString = encodeURIComponent(renderToStaticMarkup(<EyeIcon size={16} />));
+    const svgString = encodeURIComponent(renderToStaticMarkup(<Icons name={showPassword ? 'visibility' : 'visibility_off'} viewBox={24} width={16} height={16} />));
     const dataUri = `url("data:image/svg+xml,${svgString}") center / contain no-repeat`;
     let normalStyle = {
         padding: '10px 35px 10px 10px', 
@@ -72,7 +72,7 @@ class Input extends React.Component {
           </label>
         </div>
 
-        { value.length > 0 && quality && <ProgressBar percent={quality} width={130} /> }
+        { value.length > 0 && quality && <ProgressBar percent={quality} width={130} height={5} /> }
 
       </div>
     );
