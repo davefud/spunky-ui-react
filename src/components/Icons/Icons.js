@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import * as icons from './AvailableIcons'
 
-const Icons = ({ name, paths, viewBox, width, height, ariaHidden = true, className, color }) => {
+function Icons({ name, paths, viewBox, width, height, ariaHidden = true, className, color }) {
   const iconPaths = name ? icons[name] : paths
 
   return (
-    <svg
+    <svg xmlns="http://www.w3.org/2000/svg" 
       width={`${width}`}
       height={`${height}`}
       className={className}

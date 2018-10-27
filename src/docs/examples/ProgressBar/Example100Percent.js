@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgressBar from 'spunky-ui-react/ProgressBar';
+import Label from 'spunky-ui-react/Label';
 
 /** Linear Progress Bar */
 export default class Example100Percent extends React.Component {
@@ -29,14 +30,17 @@ export default class Example100Percent extends React.Component {
     render() {
         return (
             <div>
+                <h5><Label htmlFor={''} label={'Showing Percentage'} /></h5>
                 <ProgressBar 
                     percent={this.state.completed} 
                     width={450} 
-                    height={25} />
+                    showPercentage={true} />
                 <br />
+                <h5><Label htmlFor={''} label={'Not Showing Percentage'} /></h5>
                 <ProgressBar 
                     percent={this.state.completed} 
                     width={450} />
+                    
             </div>
         );
     }
