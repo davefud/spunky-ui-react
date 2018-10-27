@@ -6,16 +6,16 @@ import Label from 'spunky-ui-react/Label'
 export default function ExampleAllIcons() {
     let availableIcons = [
         'code',
-        'github',
-        'unfold_more',
-        'visibility',
-        'visibility_off',
         'edit',
         'file_copy',
-        'unfold_less',
+        'github',
+        'menu',
         'more_horiz',
-        'menu'
-    ];
+        'unfold_more',
+        'unfold_less',
+        'visibility',
+        'visibility_off'
+    ].sort();
 
     let icons = availableIcons.map((icon) => {
         return (
