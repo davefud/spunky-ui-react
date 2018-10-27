@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import TextInput from '../TextInput';
-import PasswordInput from '../PasswordInput';
+// import TextInput from '../TextInput';
+// import PasswordInput from '../PasswordInput';
+import Input from '../Input';
 
 /** Registration form with built-in validation. */
   function RegistrationForm({user, passwordQuality, onChange, onSubmit, errors}) {
     return (
       <div>
-        <TextInput
+        <Input
           htmlId="registration-form-email"
           name="email"
           onChange={onChange}
@@ -16,7 +17,7 @@ import PasswordInput from '../PasswordInput';
           error={errors.email}
           required />
 
-        <PasswordInput
+        <Input
           htmlId="registration-form-password"
           name="password"
           value={user.password}
