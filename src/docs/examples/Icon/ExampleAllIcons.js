@@ -1,24 +1,12 @@
 import React from 'react';
 import Icon from 'spunky-ui-react/Icon';
 import Label from 'spunky-ui-react/Label';
+import * as Icons from 'spunky-ui-react/Icon/AvailableIcons';
 
 /** All Icons */
 export default function ExampleAllIcons() {
-    let availableIcons = [
-        'code',
-        'edit',
-        'file_copy',
-        'github',
-        'menu',
-        'more_horiz',
-        'unfold_more',
-        'unfold_less',
-        'visibility',
-        'visibility_off'
-    ].sort();
 
-
-    let icons = availableIcons.map((icon) => {
+    let icons = Object.keys(Icons).map((icon) => {
         return (
             <div key={icon} style={{
                 margin: '25px', 
@@ -51,6 +39,3 @@ export default function ExampleAllIcons() {
     
     return <div>{icons}</div>;
 }
-
-
-
