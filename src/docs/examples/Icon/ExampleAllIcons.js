@@ -1,6 +1,6 @@
 import React from 'react';
-import Icons from 'spunky-ui-react/Icons';
-import Label from 'spunky-ui-react/Label'
+import Icon from 'spunky-ui-react/Icon';
+import Label from 'spunky-ui-react/Label';
 
 /** All Icons */
 export default function ExampleAllIcons() {
@@ -17,6 +17,7 @@ export default function ExampleAllIcons() {
         'visibility_off'
     ].sort();
 
+
     let icons = availableIcons.map((icon) => {
         return (
             <div key={icon} style={{
@@ -28,7 +29,7 @@ export default function ExampleAllIcons() {
                     borderRadius: '3px', 
                     justifyContent: 'center'
                 }} title={icon}>
-                    <Icons 
+                    <Icon
                         name={icon} 
                         viewBox={24} 
                         width={55} 

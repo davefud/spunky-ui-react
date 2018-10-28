@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import * as icons from './AvailableIcons'
+import * as icons from './AvailableIcons';
 
-function Icons({ name, paths, viewBox, width, height, ariaHidden = true, className, color }) {
+
+function Icon({ name, paths, viewBox, width, height, ariaHidden = true, className, color }) {
   const iconPaths = name ? icons[name] : paths
 
   return (
@@ -19,7 +20,7 @@ function Icons({ name, paths, viewBox, width, height, ariaHidden = true, classNa
   );
 }
 
-Icons.propTypes = {
+Icon.propTypes = {
   /**
    * The name of the icon e.g. chevron, facebook etc.
    */
@@ -82,7 +83,7 @@ Icons.propTypes = {
   ])
 }
 
-Icons.defaultProps = {
+Icon.defaultProps = {
   color: 'currentColor',
   paths: [],
   rotate: 0,
@@ -94,4 +95,4 @@ Icons.defaultProps = {
   height: '100%'
 }
 
-export default Icons
+export default Icon

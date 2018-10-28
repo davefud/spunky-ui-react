@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import CodeExample from './CodeExample';
 import { CSSTransition } from 'react-transition-group';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import Icons from 'spunky-ui-react/Icons';
+import Icon from 'spunky-ui-react/Icon';
 
 class Example extends React.Component {
   constructor(props) {
@@ -44,18 +44,18 @@ class Example extends React.Component {
           <div style={{position: 'absolute', top: 0, right: '28px'}}>
             <button className="j58 j52" type="button" arial-label='Show the cource code' title='Show the source' onClick={this.toggleCode}
               onMouseDown={this.handleMouseDown}>
-              <Icons name={'code'} viewBox={24} width={24} height={24} className={'j61'} />
+              <Icon name={'code'} viewBox={24} width={24} height={24} className={'j61'} />
             </button>
             <a className='j58 j52' 
                 role='button' 
                 href={`https://github.com/davefud/spunky-ui-react/blob/master/src/docs/examples/${this.props.componentName}/${name}.js`}
                 target='_blank' rel="noopener noreferrer" 
                 title='See the source on GitHub'>
-                  <Icons name={'github'} viewBox={24} width={24} height={24} className={'j61'} />
+                  <Icon name={'github'} viewBox={24} width={24} height={24} className={'j61'} />
               </a>
               <CopyToClipboard text={code}>
                 <button className="j58 j52" type="button" arial-label='Copy the cource code' title="Copy the source" onClick={this.copyToClipboard}>
-                <Icons name={'file_copy'} viewBox={24} width={24} height={24} className={'j61'} />
+                <Icon name={'file_copy'} viewBox={24} width={24} height={24} className={'j61'} />
                 </button>
               </CopyToClipboard>
           </div>
