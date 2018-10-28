@@ -4,4 +4,4 @@ export {default as TextInput} from './TextInput';
 export {default as PasswordInput} from './PasswordInput';
 export {default as RegistrationForm} from './RegistrationForm';
 export {default as Input} from './Input';
-export {default as Icons} from './Icons';
+export {default as Icon} from './Icon';
