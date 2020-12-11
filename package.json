@@ -120,6 +120,7 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-transition-group": "^2.5.0",
+    "spunky-ui-react": "^0.3.11",
     "styled-components": "^4.0.3"
   },
   "eslintConfig": {
