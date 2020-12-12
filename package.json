@@ -33,7 +33,7 @@
     "test-coverage": "npm run test -- --coverage"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "author": {
     "name": "David Glass",
@@ -112,7 +112,7 @@
     "terser-webpack-plugin": "3.1.0",
     "url-loader": "1.1.1",
     "webpack": "4.19.1",
-    "webpack-dev-server": "3.1.14",
+    "webpack-dev-server": "^3.11.0",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.2"
   },
