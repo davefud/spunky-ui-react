@@ -93,5 +93,9 @@ yarn-error.log*
 # VSCode launch configuration
 launch.json
 
+#vscode directory
+.vscode
+
 # Webstorm
 .idea
+
